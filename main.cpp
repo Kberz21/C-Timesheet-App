@@ -33,6 +33,8 @@ int main() {
 
         cout << "Do you want to add another employee? (0 for Yes / 1 for No): ";
         cin >> option;
+
+        cout<<"Bye bye!"<<endl;
     }
     return 0;
 }
