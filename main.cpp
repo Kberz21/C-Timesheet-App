@@ -35,6 +35,7 @@ int main() {
         cin >> option;
 
         cout<<"Bye bye!"<<endl;
+        cout<<"-----------------"<<endl;
     }
     return 0;
 }
