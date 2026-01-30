@@ -7,10 +7,11 @@
 #include "users.hpp"
 using namespace std;
 
-users::users(int uid, string n, string em, bool im, string hp, struct tm ss, struct tm se, bool ift, string dept, int hpw){
+users::users(int uid, string n, string em, string s,bool im, string hp, struct tm ss, struct tm se, bool ift, string dept, int hpw){
     userId = uid;
     name = n;
     email = em;
+    sex = s;
     is_manager = im;
     hased_password = hp;
     shift_start = ss;
