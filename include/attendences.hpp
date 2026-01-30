@@ -12,4 +12,6 @@ class attendences{
         struct tm checkOutTime;
         struct tm break_time_in;
         struct tm break_time_out;
+    public:
+        attendences(int aid, int uid, struct tm d, struct tm ci, struct tm co, struct tm bti, struct tm bto);
 };
