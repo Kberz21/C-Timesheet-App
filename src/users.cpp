@@ -20,3 +20,14 @@ users::users(int uid, string n, string em, string s,bool im, string hp, struct t
     department = dept;
     hour_pay = hpw;
 }
+
+void create_new_user(){
+    cout << "Creating a new user..." << endl;
+    cout << "Enter name: ";
+    string name;
+    getline(cin, name);
+    cout << "Enter email: ";
+    string email;
+    getline(cin, email);
+    cout << "Enter ";
+};
