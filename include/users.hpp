@@ -1,10 +1,11 @@
+#ifndef USERS_H
+#define USERS_H
 #pragma once
-#include <iostream>
 #include <string>
 #include <ctime>
+#include <iostream>
 using namespace std;
-
-class users{
+class Users{
     private:
         static int userId;
         string name;
@@ -18,7 +19,8 @@ class users{
         string department; //display purposes
         int hour_pay;// display & calculation purposes
     public:
-        users(int uid, string n, string em, string s,bool im, string hp, bool ift, string dept, int hpw); //need reorder of parameters
+        Users(){};
+        Users(int uid, string n, string em, string s,bool im, string hp, bool ift, string dept, int hpw); //need reorder of parameters      
 };
-// Create a new user interactively (defined in src/users.cpp)
-void create_new_user();
+
+#endif

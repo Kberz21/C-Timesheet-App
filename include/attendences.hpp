@@ -3,7 +3,7 @@
 #include <ctime>
 using namespace std;
 
-class attendences{
+class Attendences{
     private:
         int attendenceId;
         int userId;
@@ -13,5 +13,5 @@ class attendences{
         struct tm break_time_in;
         struct tm break_time_out;
     public:
-        attendences(int aid, int uid, struct tm d, struct tm ci, struct tm co, struct tm bti, struct tm bto);
+        Attendences(int aid, int uid, struct tm d, struct tm ci, struct tm co, struct tm bti, struct tm bto);
 };

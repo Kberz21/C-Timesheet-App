@@ -1,0 +1,4 @@
+C:/Users/Lenovo/GitHub/C-Timesheet-App/cmake-build-debug/CMakeFiles/MyCppApp.dir
+C:/Users/Lenovo/GitHub/C-Timesheet-App/cmake-build-debug/CMakeFiles/tests_exec.dir
+C:/Users/Lenovo/GitHub/C-Timesheet-App/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Lenovo/GitHub/C-Timesheet-App/cmake-build-debug/CMakeFiles/rebuild_cache.dir
