@@ -19,3 +19,9 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin)
 
 # 5. Build the Executable
 add_executable(${PROJECT_NAME} ${SOURCES})
+
+# 6. Tests executable target
+# Builds the tests binary from tests/main.cpp linking with the required sources
+add_executable(tests_exec tests/main.cpp src/users.cpp)
+target_include_directories(tests_exec PRIVATE ${CMAKE_SOURCE_DIR}/include)
+set_target_properties(tests_exec PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/../bin)
