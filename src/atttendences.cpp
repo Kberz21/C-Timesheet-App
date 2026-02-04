@@ -1,12 +1,12 @@
 #include <iostream>
 #include <string>
 #include <ctime>
-#include "include/attendences.hpp"
-#include "include/users.hpp"
-#include "include/tasks.hpp"
+#include "../include/Attendences.hpp"
+#include "../include/users.hpp"
+#include "../include/tasks.hpp"
 using namespace std;
 
-attendences::attendences(int aid, int uid, struct tm d, struct tm ci, struct tm co, struct tm bti, struct tm bto){
+Attendences::Attendences(int aid, int uid, struct tm d, struct tm ci, struct tm co, struct tm bti, struct tm bto){
     attendenceId = aid;
     userId = uid;
     date = d;
