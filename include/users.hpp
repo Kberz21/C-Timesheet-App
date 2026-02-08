@@ -19,7 +19,11 @@ class Users{
         string department; //display purposes
         int hour_pay;// display & calculation purposes
     public:
-        Users(int uid, string n, string em, string s,bool im, string hp, bool ift, string dept, int hpw); //need reorder of parameters      
+        Users(){};
+        Users(int uid, string n, string em, string s,bool im, string hp, bool ift, string dept, int hpw); //need reorder of parameters
+        void display_user_info();
 };
- void create_new_user();
+ void create_new_user(Users& newusers);
+ void welcome_user();
+ void home_screen(Users& users);
 #endif
