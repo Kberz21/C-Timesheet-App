@@ -18,44 +18,51 @@ Users::Users(int uid, string n, string em, string s,bool im, string hp, bool ift
     hour_pay = hpw;
 }
 void create_new_user(Users& newusers){
+    // Clear any leftover input from previous operations
+    string name;
+    string email;
+    string s;
+    bool im;
+    string hp;
+    bool ift;
+    string dept;
+    int hpw;
+
     cout << "Creating a new user..." << endl;
     cout << "Enter name: ";
-    string name;
     getline(cin, name);
-    cin.ignore(); // to ignore the newline character after reading name
+   
     cout << "Enter email: ";
-    string email;
     getline(cin, email);
-    cin.ignore(); // to ignore the newline character after reading email
-    cout << "Enter sex:";
-    string s;
-    getline(cin,s);
-    cin.ignore(); // to ignore the newline character after reading
+    
+    cout << "Enter sex: ";
+    getline(cin, s);
+    
     cout << "Is manager (1 for yes, 0 for no): ";
-    bool im;
     cin >> im;
-    cin.ignore(); // to ignore the newline character after reading boolean
+    cin.ignore(); // Clear newline after boolean input
+    
     cout << "Enter password: ";
-    string hp;
     getline(cin, hp);
-    cin.ignore(); // to ignore the newline character after reading password
+    
     cout << "Is fulltime (1 for yes, 0 for no): ";
-    bool ift;
     cin >> ift;
-    cin.ignore(); // to ignore the newline character after reading boolean
+    cin.ignore(); // Clear newline after boolean input
+    
     cout << "Enter department: ";
-    string dept;
     getline(cin, dept);
-    cin.ignore(); // to ignore the newline character after reading department
+    
     cout << "Enter hourly pay: ";
-    int hpw;
     cin >> hpw;
-    static int userIdCounter = 1; // Simple counter for user IDs
+    cin.ignore(); // Clear newline after integer input
+    
+    static int userIdCounter = 1;
     Users newUser(userIdCounter, name, email, s, im, hp, ift, dept, hpw);
     newusers = newUser;
     userIdCounter++;
+    
     cout << "User created successfully!" << endl;
-    cout <<"\n";
+    cout << "\n";
 }
 void welcome_user(){
     cout<<"---Welcome to User Management System---"<<endl;
